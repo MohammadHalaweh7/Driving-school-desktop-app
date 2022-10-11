@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.stage.Stage?>
+
+<Stage xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.DrivingSchool.RoadSafety2Controller">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="700.0" prefWidth="940.0" style="-fx-background-color: white;">
+                <children>
+                    <HBox layoutX="3.0" prefHeight="51.0" prefWidth="800.0" style="-fx-background-color: #f9a826;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                        <children>
+                            <Button fx:id="HomeButton" mnemonicParsing="false" onAction="#HomeRoadSafety2" prefHeight="51.0" prefWidth="100.0" styleClass="button5" stylesheets="@../StyleSheet/Style.css" text="Home" textFill="WHITE">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Button>
+                            <Button fx:id="DrivingCourseButton" mnemonicParsing="false" onAction="#DrivingCourseRoadSafety2" prefHeight="51.0" prefWidth="195.0" styleClass="button5" stylesheets="@../StyleSheet/Style.css" text="Driving Course" textFill="WHITE">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Button>
+                            <Button fx:id="SignsAndSignalsButton" mnemonicParsing="false" onAction="#SignAndSignalRoadSafety2" prefHeight="51.0" prefWidth="220.0" styleClass="button5" stylesheets="@../StyleSheet/Style.css" text="Signs and Signals" textFill="WHITE">
+                                <font>
+                                    <Font size="10.0" />
+                                </font>
+                            </Button>
+                            <Button fx:id="RoadSafetyButton" mnemonicParsing="false" onAction="#RoadSafetyRoadSafety2" prefHeight="51.0" prefWidth="195.0" styleClass="button5" stylesheets="@../StyleSheet/Style.css" text="Road Safety" textFill="WHITE">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Button>
+                     <Button fx:id="ExamsButton" mnemonicParsing="false" onAction="#ExamsRoadSafety2" prefHeight="51.0" prefWidth="110.0" styleClass="button5" stylesheets="@../StyleSheet/Style.css" text="Exams" textFill="WHITE">
+                        <font>
+                           <Font size="17.0" />
+                        </font>
+                     </Button>
+                            <Button fx:id="LogInButton" mnemonicParsing="false" onAction="#LogOutRoadSafety2" prefHeight="51.0" prefWidth="120.0" styleClass="button5" stylesheets="@../StyleSheet/Style.css" text="Log Out" textFill="WHITE">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Button>
+                        </children>
+                    </HBox>
+                    <Button layoutX="799.0" layoutY="663.0" mnemonicParsing="false" onAction="#Next" prefHeight="35.0" prefWidth="100.0" styleClass="button2" stylesheets="@../StyleSheet/Style.css" text="Next" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+               <ImageView fitHeight="315.0" fitWidth="445.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Images/PicsArt_12-08-01.18.26.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="116.0" fitWidth="477.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Images/PicsArt_12-08-01.19.00.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="164.0" fitWidth="420.0" layoutX="2.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Images/PicsArt_12-08-01.19.25.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="155.0" fitWidth="465.0" layoutX="2.0" layoutY="577.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Images/PicsArt_12-08-01.19.57.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="175.0" fitWidth="461.0" layoutX="478.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Images/PicsArt_12-08-01.20.25.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="168.0" fitWidth="463.0" layoutX="475.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Images/PicsArt_12-08-01.20.58.png" />
+                  </image>
+               </ImageView>
+               <Button layoutX="661.0" layoutY="663.0" mnemonicParsing="false" onAction="#Previous" prefHeight="35.0" prefWidth="100.0" styleClass="button2" stylesheets="@../StyleSheet/Style.css" text="Previous" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="140.0" />
+               <ImageView fitHeight="126.0" fitWidth="161.0" layoutX="773.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Images/ShamefulInbornDegus-size_restricted.gif" />
+                  </image>
+               </ImageView>
+                </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

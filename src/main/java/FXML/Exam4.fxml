@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.stage.Stage?>
+
+<Stage xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.DrivingSchool.Exam3Controller">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="700.0" prefWidth="940.0" style="-fx-background-color: white;">
+                <children>
+                    <HBox layoutX="3.0" prefHeight="51.0" prefWidth="800.0" style="-fx-background-color: #f9a826;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                        <children>
+                            <Button fx:id="HomeButton" mnemonicParsing="false" onAction="#HomeExam3" prefHeight="51.0" prefWidth="100.0" styleClass="button5" stylesheets="@../StyleSheet/Style.css" text="Home" textFill="WHITE">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Button>
+                            <Button fx:id="DrivingCourseButton" mnemonicParsing="false" onAction="#DrivingCourseExam3" prefHeight="51.0" prefWidth="195.0" styleClass="button5" stylesheets="@../StyleSheet/Style.css" text="Driving Course" textFill="WHITE">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Button>
+                            <Button fx:id="SignsAndSignalsButton" mnemonicParsing="false" onAction="#SignsAndSignalsExam3" prefHeight="51.0" prefWidth="220.0" styleClass="button5" stylesheets="@../StyleSheet/Style.css" text="Signs and Signals" textFill="WHITE">
+                                <font>
+                                    <Font size="10.0" />
+                                </font>
+                            </Button>
+                            <Button fx:id="RoadSafetyButton" mnemonicParsing="false" onAction="#RoadSafetyExam3" prefHeight="51.0" prefWidth="195.0" styleClass="button5" stylesheets="@../StyleSheet/Style.css" text="Road Safety" textFill="WHITE">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Button>
+                     <Button fx:id="ExamsButton" mnemonicParsing="false" onAction="#ExamsExam3" prefHeight="51.0" prefWidth="110.0" styleClass="button5" stylesheets="@../StyleSheet/Style.css" text="Exams" textFill="WHITE">
+                        <font>
+                           <Font size="17.0" />
+                        </font>
+                     </Button>
+                            <Button fx:id="LogInButton" mnemonicParsing="false" onAction="#LogOutExam3" prefHeight="51.0" prefWidth="120.0" styleClass="button5" stylesheets="@../StyleSheet/Style.css" text="Log Out" textFill="WHITE">
+                                <font>
+                                    <Font size="17.0" />
+                                </font>
+                            </Button>
+                        </children>
+                    </HBox>
+                    <Pane layoutY="51.0" prefHeight="212.0" prefWidth="788.0">
+                        <children>
+                            <VBox layoutX="14.0" layoutY="39.0" prefHeight="178.0" prefWidth="659.0">
+                                <children>
+                                    <RadioButton fx:id="solution13" mnemonicParsing="false" prefHeight="62.0" prefWidth="678.0" text="A broken line on the road surface indicates that you are traveling inside cities .">
+                              <toggleGroup>
+                                 <ToggleGroup fx:id="Q4Group" />
+                              </toggleGroup></RadioButton>
+                                    <RadioButton fx:id="solution14" mnemonicParsing="false" prefHeight="62.0" prefWidth="678.0" text="A white dashed line that may not be permanently breached into ." toggleGroup="$Q4Group" />
+                                    <RadioButton fx:id="solution15" mnemonicParsing="false" prefHeight="62.0" prefWidth="678.0" text="The driver of the vehicle. The dashed line does not penetrate except for the purpose of overtaking a broken ." toggleGroup="$Q4Group" />
+                                    <RadioButton fx:id="solution16" mnemonicParsing="false" prefHeight="62.0" prefWidth="678.0" text="line as a continuous dividing line that may not be breached ." toggleGroup="$Q4Group" />
+                                </children>
+                            </VBox>
+                     <ImageView fitHeight="48.0" fitWidth="98.0" layoutX="297.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Images/59.jpg" />
+                        </image>
+                     </ImageView>
+                            <Label layoutX="20.0" layoutY="8.0" prefHeight="28.0" prefWidth="693.0" text="Q4- What does the sign mean                          ? ">
+                                <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                </font>
+                            </Label>
+                        </children>
+                    </Pane>
+                    <Pane layoutY="263.0" prefHeight="220.0" prefWidth="788.0">
+                        <children>
+                            <Label layoutX="14.0" layoutY="5.0" prefHeight="33.0" prefWidth="807.0" text="Q5-How would you behave upon your visions                                made before the turn ?  ">
+                                <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                </font>
+                            </Label>
+                            <VBox layoutX="14.0" layoutY="39.0" prefHeight="178.0" prefWidth="659.0">
+                                <children>
+                                    <RadioButton fx:id="solution17" mnemonicParsing="false" prefHeight="62.0" prefWidth="678.0" text=" Do it carefully while obeying the signs, if any .">
+                              <toggleGroup>
+                                 <ToggleGroup fx:id="Q5Group" />
+                              </toggleGroup></RadioButton>
+                                    <RadioButton fx:id="solution18" mnemonicParsing="false" prefHeight="62.0" prefWidth="678.0" text="Stop your vehicle before the stop line or before the pedestrian headquarters, La Hamra ." toggleGroup="$Q5Group" />
+                                    <RadioButton fx:id="solution19" mnemonicParsing="false" prefHeight="62.0" prefWidth="678.0" text="This sign is for pedestrians, and not for vehicles ." toggleGroup="$Q5Group" />
+                                    <RadioButton fx:id="solution20" mnemonicParsing="false" prefHeight="62.0" prefWidth="678.0" text="Your vehicle will stop next to the nearby traffic light ." toggleGroup="$Q5Group" />
+                                </children>
+                            </VBox>
+                     <ImageView fitHeight="49.0" fitWidth="118.0" layoutX="422.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Images/60.jpg" />
+                        </image>
+                     </ImageView>
+                        </children>
+                    </Pane>
+                    <Pane layoutX="1.0" layoutY="474.0" prefHeight="220.0" prefWidth="788.0">
+                        <children>
+                            <Label layoutX="14.0" layoutY="10.0" prefHeight="32.0" prefWidth="835.0" text="Q6-Where to stop your vehicle when you see the sign                ?">
+                                <font>
+                                    <Font name="System Bold Italic" size="15.0" />
+                                </font>
+                            </Label>
+                            <VBox layoutX="14.0" layoutY="39.0" prefHeight="178.0" prefWidth="659.0">
+                                <children>
+                                    <RadioButton fx:id="solution21" mnemonicParsing="false" prefHeight="62.0" prefWidth="678.0" text="next to the optical vehicle nearby .">
+                              <toggleGroup>
+                                 <ToggleGroup fx:id="Q6Group" />
+                              </toggleGroup></RadioButton>
+                                    <RadioButton fx:id="solution22" mnemonicParsing="false" prefHeight="62.0" prefWidth="678.0" text="Pulp before the stop line or before the crosswalk ." toggleGroup="$Q6Group" />
+                                    <RadioButton fx:id="solution23" mnemonicParsing="false" prefHeight="62.0" prefWidth="678.0" text="Where you can see pedestrian traffic ." toggleGroup="$Q6Group" />
+                                    <RadioButton fx:id="solution24" mnemonicParsing="false" prefHeight="62.0" prefWidth="678.0" text="This sign is for pedestrians, not vehicles ." toggleGroup="$Q6Group" />
+                                </children>
+                            </VBox>
+                     <ImageView fitHeight="103.0" fitWidth="51.0" layoutX="484.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../Images/61.jpg" />
+                        </image>
+                     </ImageView>
+                        </children>
+                    </Pane>
+                    <Button layoutX="814.0" layoutY="658.0" mnemonicParsing="false" onAction="#FinishExam" prefHeight="35.0" prefWidth="120.0" styleClass="button2" stylesheets="@../StyleSheet/Style.css" text="Finish Exam" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+                    <Button layoutX="694.0" layoutY="653.0" mnemonicParsing="false" onAction="#Previous" prefHeight="35.0" prefWidth="120.0" styleClass="button2" stylesheets="@../StyleSheet/Style.css" text="Previous" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="160.0" />
+                </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

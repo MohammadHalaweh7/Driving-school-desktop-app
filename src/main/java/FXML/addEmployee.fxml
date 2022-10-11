@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.stage.Stage?>
+
+<Stage fx:id="AddEmployeeStage" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.DrivingSchool.AddEmployeeController">
+    <scene>
+        <Scene>
+            <AnchorPane maxHeight="700.0" maxWidth="940.0" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;">
+            <children>
+               <ImageView fx:id="startEmployeedate" fitHeight="470.0" fitWidth="588.0" layoutX="447.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-13.0" AnchorPane.rightAnchor="-68.0">
+                  <image>
+                     <Image url="@../Images/driver.png" />
+                  </image>
+               </ImageView>
+               <TextField fx:id="nameEmployeeField" layoutX="356.0" layoutY="120.0" prefWidth="250.0" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="120.0">
+                  <tooltip>
+                     <Tooltip text="firstName  lastName" />
+                  </tooltip></TextField>
+               <TextField fx:id="idEmployeeField" layoutX="360.0" layoutY="150.0" prefWidth="250.0">
+                  <tooltip>
+                     <Tooltip text="only digits" />
+                  </tooltip></TextField>
+               <TextField fx:id="addressEmployeeField" layoutX="360.0" layoutY="180.0" prefWidth="250.0" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="180.0" />
+               <DatePicker fx:id="birthEmployeeDate" editable="false" layoutX="348.0" layoutY="210.0" prefWidth="250.0" promptText="mm/dd/yyyy" styleClass="month-year-pane" stylesheets="@../StyleSheet/Style.css" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="210.0" />
+               <RadioButton fx:id="maleRadioEmployeeButton" layoutX="348.0" layoutY="244.0" mnemonicParsing="false" styleClass="Radio" stylesheets="@../StyleSheet/Style.css" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="240.0">
+                  <toggleGroup>
+                     <ToggleGroup fx:id="Gender" />
+                  </toggleGroup>
+                  <tooltip>
+                     <Tooltip text="male" />
+                  </tooltip></RadioButton>
+               <RadioButton fx:id="femaleRadioEmployeeButton" layoutX="494.0" layoutY="240.0" mnemonicParsing="false" styleClass="Radio" stylesheets="@../StyleSheet/Style.css" toggleGroup="$Gender" AnchorPane.topAnchor="240.0">
+                  <tooltip>
+                     <Tooltip text="female" />
+                  </tooltip></RadioButton>
+               <TextField fx:id="phoneEmployeeField" layoutX="364.0" layoutY="270.0" prefWidth="250.0" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="270.0">
+                  <tooltip>
+                     <Tooltip text="05XXXXXXXX only digits" />
+                  </tooltip></TextField>
+               <DatePicker fx:id="startEmployeeDate" editable="false" layoutX="352.0" layoutY="330.0" prefWidth="250.0" promptText="mm/dd/yyyy" styleClass="month-year-pane" stylesheets="@../StyleSheet/Style.css" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="300.0" />
+               <TextField fx:id="emailEmployeeField" layoutX="360.0" layoutY="360.0" prefWidth="250.0" AnchorPane.topAnchor="330.0">
+                  <tooltip>
+                     <Tooltip text="example@gmail.com" />
+                  </tooltip></TextField>
+               <PasswordField fx:id="passwordEmployeeField" layoutX="360.0" layoutY="390.0" prefWidth="250.0" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="360.0" />
+               <PasswordField fx:id="confirmEmployeeField" layoutX="360.0" layoutY="420.0" prefWidth="250.0" AnchorPane.leftAnchor="360.0" AnchorPane.topAnchor="390.0" />
+                <Button fx:id="addEmployeeButton" layoutX="513.0" layoutY="506.0" maxHeight="30.0" maxWidth="80.0" mnemonicParsing="false" onAction="#add" prefHeight="30.0" prefWidth="80.0" styleClass="button2" stylesheets="@../StyleSheet/Style.css" text="Add" textFill="WHITE" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="500.0" />
+                <Button fx:id="cancelButton" cancelButton="true" layoutX="445.0" layoutY="506.0" mnemonicParsing="false" onAction="#cancel" prefHeight="30.0" prefWidth="80.0" styleClass="button2" stylesheets="@../StyleSheet/Style.css" text="Cancle" textFill="WHITE" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="500.0" />
+                <Pane layoutY="8.0" prefHeight="600.0" prefWidth="175.0" style="-fx-background-color: #1e0c4d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               <Button fx:id="homeButton" focusTraversable="false" mnemonicParsing="false" onAction="#home" styleClass="button1" stylesheets="@../StyleSheet/Style.css" text="Home" textFill="WHITE" AnchorPane.leftAnchor="-15.0" AnchorPane.topAnchor="110.0" />
+                <Button fx:id="employeeButton" focusTraversable="false" mnemonicParsing="false" onAction="#employee" prefHeight="60.0" styleClass="button1" stylesheets="@../StyleSheet/Style.css" text="Employees" textFill="WHITE" AnchorPane.leftAnchor="-15.0" AnchorPane.topAnchor="200.0">
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets></Button>
+                <Button fx:id="studentButton" focusTraversable="false" mnemonicParsing="false" onAction="#student" prefHeight="60.0" styleClass="button1" stylesheets="@../StyleSheet/Style.css" text="Students" textFill="WHITE" AnchorPane.leftAnchor="-15.0" AnchorPane.topAnchor="290.0" />
+                <Button fx:id="vehicleButton" focusTraversable="false" mnemonicParsing="false" onAction="#vehicle" prefHeight="60.0" styleClass="button1" stylesheets="@../StyleSheet/Style.css" text="Vehicles" textFill="WHITE" AnchorPane.leftAnchor="-15.0" AnchorPane.topAnchor="380.0" />
+                <Label alignment="CENTER" layoutX="426.0" layoutY="83.0" prefWidth="400.0" styleClass="label1" stylesheets="@../StyleSheet/Style.css" text="Add Employee" textFill="#f9a826" underline="true" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="30.0" />
+               <Label layoutX="236.0" layoutY="134.0" styleClass="label2" stylesheets="@../StyleSheet/Style.css" text="Name :" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="120.0" />
+               <Label layoutX="236.0" layoutY="164.0" styleClass="label2" stylesheets="@../StyleSheet/Style.css" text="ID :" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="150.0" />
+               <Label layoutX="236.0" layoutY="194.0" styleClass="label2" stylesheets="@../StyleSheet/Style.css" text="Address :" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="180.0" />
+               <Label layoutX="236.0" layoutY="232.0" styleClass="label2" stylesheets="@../StyleSheet/Style.css" text="Birth date :" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="210.0" />
+               <Label layoutX="236.0" layoutY="262.0" styleClass="label2" stylesheets="@../StyleSheet/Style.css" text="Gender :" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="240.0" />
+               <Label layoutX="236.0" layoutY="284.0" styleClass="label2" stylesheets="@../StyleSheet/Style.css" text="Phone number:" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="270.0" />
+               <Label layoutX="236.0" layoutY="337.0" styleClass="label2" stylesheets="@../StyleSheet/Style.css" text="Start date :" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="300.0" />
+               <Label layoutX="224.0" layoutY="361.0" styleClass="label2" stylesheets="@../StyleSheet/Style.css" text="E-mail :" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="330.0" />
+               <Label layoutX="224.0" layoutY="389.0" styleClass="label2" stylesheets="@../StyleSheet/Style.css" text="Password :" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="360.0" />
+               <Label layoutX="224.0" layoutY="426.0" styleClass="label2" stylesheets="@../StyleSheet/Style.css" text="Confirm :" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="390.0" />
+               <Pane layoutX="416.0" layoutY="132.0" prefHeight="600.0" prefWidth="5.0" style="-fx-background-color: #1e0c4d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="0.0" />
+               <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="388.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Images/gender(1).png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="517.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Images/gender(2).png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="675.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                  <image>
+                     <Image url="@../Images/driving-school(1).png" />
+                  </image>
+               </ImageView>
+                <Button fx:id="exit" focusTraversable="false" layoutX="423.0" layoutY="387.0" mnemonicParsing="false" onAction="#exit" prefHeight="44.0" prefWidth="100.0" styleClass="button3" stylesheets="@../StyleSheet/Style.css" text="Log out" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" />
+
+                <Button fx:id="meetingButton" focusTraversable="false" mnemonicParsing="false" onAction="#meeting" prefHeight="60.0" styleClass="button1" stylesheets="@../StyleSheet/Style.css" text="Meetings" textFill="WHITE" AnchorPane.leftAnchor="-15.0" AnchorPane.topAnchor="470.0" />
+
+
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

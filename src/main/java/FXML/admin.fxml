@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.stage.Stage?>
+
+<Stage fx:id="AdminStage" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.DrivingSchool.AdminController">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="700.0" prefWidth="940.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <Pane layoutY="8.0" prefHeight="600.0" prefWidth="175.0" style="-fx-background-color: #1e0c4d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                <Pane layoutX="634.0" layoutY="-9.0" prefHeight="600.0" prefWidth="5.0" style="-fx-background-color: #1e0c4d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="0.0" />
+                <Button fx:id="employeeButton" focusTraversable="false" mnemonicParsing="false" onAction="#employee" prefHeight="60.0" styleClass="button1" stylesheets="@../StyleSheet/Style.css" text="Employees" textFill="WHITE" AnchorPane.leftAnchor="-15.0" AnchorPane.topAnchor="200.0" />
+                <Button fx:id="studentButton" focusTraversable="false" mnemonicParsing="false" onAction="#student" prefHeight="60.0" styleClass="button1" stylesheets="@../StyleSheet/Style.css" text="Students" textFill="WHITE" AnchorPane.leftAnchor="-15.0" AnchorPane.topAnchor="290.0" />
+                <Button fx:id="vehicleButton" focusTraversable="false" mnemonicParsing="false" onAction="#vehicle" prefHeight="60.0" styleClass="button1" stylesheets="@../StyleSheet/Style.css" text="Vehicles" textFill="WHITE" AnchorPane.leftAnchor="-15.0" AnchorPane.topAnchor="380.0" />
+                <Label alignment="CENTER" layoutX="420.0" layoutY="30.0" prefHeight="61.0" prefWidth="300.0" styleClass="label1" stylesheets="@../StyleSheet/Style.css" text="Home" textFill="#f9a826" underline="true" AnchorPane.leftAnchor="350.0" AnchorPane.topAnchor="30.0" />
+                <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="675.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                    <image>
+                        <Image url="@../Images/driving-school(1).png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="homeButton" focusTraversable="false" mnemonicParsing="false" onAction="#home" styleClass="button1" stylesheets="@../StyleSheet/Style.css" text="Home" textFill="WHITE" AnchorPane.leftAnchor="-15.0" AnchorPane.topAnchor="110.0" />
+
+                <Button fx:id="exit" layoutX="423.0" layoutY="387.0" mnemonicParsing="false" onAction="#exit" prefHeight="44.0" prefWidth="120.0" styleClass="button3" stylesheets="@../StyleSheet/Style.css" text="Log out" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" />
+                <Button fx:id="meetingButton" focusTraversable="false" mnemonicParsing="false" onAction="#meeting" prefHeight="60.0" styleClass="button1" stylesheets="@../StyleSheet/Style.css" text="Meetings" textFill="WHITE" AnchorPane.leftAnchor="-15.0" AnchorPane.topAnchor="470.0" />
+               <ImageView fitHeight="456.0" fitWidth="662.0" layoutX="200.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="6.0">
+                  <image>
+                     <Image url="@../Images/a98b98cd-66df-45e5-96bb-e98ac42b2e03.gif" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="800.0" layoutY="153.0" onMouseClicked="#changePassword" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="150.0">
+                  <image>
+                     <Image url="@../Images/changePassword.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="850.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="200.0">
+                  <image>
+                     <Image url="@../Images/calendar.png" />
+                  </image>
+               </ImageView>
+               <Label layoutX="207.0" layoutY="128.0" styleClass="label2" stylesheets="@../StyleSheet/Style.css" text="Name :" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="150.0" />
+               <Label layoutX="203.0" layoutY="210.0" styleClass="label2" stylesheets="@../StyleSheet/Style.css" text="Email :" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="180.0" />
+               <Label fx:id="nameLabel" layoutX="302.0" layoutY="230.0" prefWidth="300.0" styleClass="label2" stylesheets="@../StyleSheet/Style.css" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="150.0" />
+               <Label fx:id="emailLabel" layoutX="310.0" layoutY="235.0" prefWidth="300.0" styleClass="label2" stylesheets="@../StyleSheet/Style.css" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="180.0" />
+               <Label layoutX="204.0" layoutY="626.0" prefHeight="18.0" prefWidth="238.0" text="Palestine_Nablus_An najah Street" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="190.0" />
+               <Label layoutX="196.0" layoutY="654.0" prefHeight="18.0" prefWidth="209.0" text="+972567418529" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="190.0" />
+               <Label layoutX="204.0" layoutY="662.0" prefHeight="18.0" prefWidth="213.0" text="drivindschoot1812@gmail.cpm" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="190.0" />
+
+              
+
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

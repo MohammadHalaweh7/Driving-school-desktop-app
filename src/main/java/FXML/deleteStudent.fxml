@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.stage.Stage?>
+
+<Stage fx:id="DeleteStudentStage" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.DrivingSchool.DeleteStudentController">
+    <scene>
+        <Scene fx:id="deleteStudentScene">
+            <AnchorPane fx:id="deleteStudentAnchotPane" prefHeight="700.0" prefWidth="940.0" style="-fx-background-color: #ffffff;">
+            <children>
+
+                <ImageView fitHeight="413.0" fitWidth="550.0" layoutX="370.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-16.0" AnchorPane.rightAnchor="-39.0">
+                    <image>
+                        <Image url="@../Images/undraw_electric_car_b7hl.png" />
+                    </image>
+                </ImageView>
+                <TextField fx:id="studentIDField" layoutX="360.0" layoutY="200.0" prefWidth="250.0" AnchorPane.topAnchor="200.0" />
+                <Button fx:id="deleteStudentButton" layoutX="489.0" layoutY="470.0" mnemonicParsing="false" onAction="#delete" prefHeight="30.0" prefWidth="80.0" styleClass="button2" stylesheets="@../StyleSheet/Style.css" text="Delete" textFill="WHITE" AnchorPane.leftAnchor="390.0" AnchorPane.topAnchor="500.0" />
+                <Button fx:id="cancelButton" layoutX="445.0" layoutY="506.0" mnemonicParsing="false" onAction="#cancel" prefHeight="30.0" prefWidth="80.0" styleClass="button2" stylesheets="@../StyleSheet/Style.css" text="Cancel" textFill="WHITE" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="500.0" />
+                <Pane layoutY="8.0" prefHeight="600.0" prefWidth="175.0" style="-fx-background-color: #1e0c4d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                <Button fx:id="employeeButton" focusTraversable="false" mnemonicParsing="false" onAction="#employee" prefHeight="60.0" styleClass="button1" stylesheets="@../StyleSheet/Style.css" text="Employees" textFill="WHITE" AnchorPane.leftAnchor="-15.0" AnchorPane.topAnchor="200.0" />
+                <Button fx:id="studentButton" focusTraversable="false" mnemonicParsing="false" onAction="#student" prefHeight="60.0" styleClass="button1" stylesheets="@../StyleSheet/Style.css" text="Students" textFill="WHITE" AnchorPane.leftAnchor="-15.0" AnchorPane.topAnchor="290.0" />
+                <Button fx:id="vehicleButton" focusTraversable="false" mnemonicParsing="false" onAction="#vehicle" prefHeight="60.0" styleClass="button1" stylesheets="@../StyleSheet/Style.css" text="Vehicles" textFill="WHITE" AnchorPane.leftAnchor="-15.0" AnchorPane.topAnchor="380.0" />
+                <Label alignment="CENTER" layoutX="243.0" layoutY="36.0" prefHeight="61.0" prefWidth="455.0" styleClass="label1" stylesheets="@../StyleSheet/Style.css" text="Delete Student" textFill="#f9a826" underline="true" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="30.0" />
+                <Pane layoutX="634.0" layoutY="-9.0" prefHeight="600.0" prefWidth="5.0" style="-fx-background-color: #1e0c4d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="0.0" />
+                <Label layoutX="250.0" layoutY="202.0" styleClass="label2" stylesheets="@../StyleSheet/Style.css" text="Student ID :" AnchorPane.leftAnchor="230.0" AnchorPane.topAnchor="200.0" />
+                <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="675.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                    <image>
+                        <Image url="@../Images/driving-school(1).png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="homeButton" focusTraversable="false" mnemonicParsing="false" onAction="#home" styleClass="button1" stylesheets="@../StyleSheet/Style.css" text="Home" textFill="WHITE" AnchorPane.leftAnchor="-15.0" AnchorPane.topAnchor="110.0" />
+                <Button fx:id="meetingButton" focusTraversable="false" mnemonicParsing="false" onAction="#meeting" prefHeight="60.0" styleClass="button1" stylesheets="@../StyleSheet/Style.css" text="Meetings" textFill="WHITE" AnchorPane.leftAnchor="-15.0" AnchorPane.topAnchor="470.0" />
+
+                <Button fx:id="exit" focusTraversable="false" layoutX="423.0" layoutY="387.0" mnemonicParsing="false" onAction="#exit" prefHeight="44.0" prefWidth="120.0" styleClass="button3" stylesheets="@../StyleSheet/Style.css" text="Log out" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="0.0" />
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>
